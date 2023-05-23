@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5 </title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho de seu navegador </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png"type="image/png">
+        <img src="img/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <p>(deixe a ordem certa, em baixo a foto maior como original e no topo a menor imagem no sorce, e no meio coloque na ordem)</p>
+    <h1>Reproduzindo Aúdio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML 5</p>
+   <audio preload="metadata" autoplay controls>
+    <source src="midia/1 hora de música ( toque)  do Pou nostalgia.mp3" type="audio/mpeg">
+    <source src="midia/1 hora de música ( toque)  do Pou nostalgia.ogg" type="audio/ogg">
+    <source src="midia/1 hora de música ( toque)  do Pou nostalgia.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir o aúdio <a href="midia/1 hora de música ( toque)  do Pou nostalgia.mp3">Clique aqui parar baixar o mp3</a></p>
+   </audio>
+
+
+</body>
+</html>
