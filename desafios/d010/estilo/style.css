@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: android;
-    src: url('/fontes/idroid.otf');
+    font-family: idroid;
+    src: url('../fontes/idroid.otf');
+    
 }
 
 :root{
@@ -15,6 +16,8 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue' , Cursive;
 
+    --fonte-android: 'idroid';
+
 
 }
 
@@ -24,7 +27,7 @@
 }
 
 .idroid{
-    font-family:'android';
+    font-family:var(--fonte-android);
     color: var(--cor5);
     font-weight: normal;
     font-size: 1.7em;
