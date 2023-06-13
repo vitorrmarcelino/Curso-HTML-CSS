@@ -36,22 +36,24 @@ a:hover{
     text-decoration: underline;
 }
 
-p{
-    padding: 50px;
+p{  
     margin: 40px;
+    padding: 60px;
     font-size: 3em;
     line-height: 180%;
 }
 #flor{
     background: black url(imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
-}
+    height: 800px;
+    margin: auto 0 auto 0; 
+ }
 
 #flor > p {
     color: white;
     background-color: rgba(0, 0, 0, 0.363);
-    padding: 40px 0px 40px 0px;
     width: 600px;
+    padding: 0px;
 }
 
 footer > p {
