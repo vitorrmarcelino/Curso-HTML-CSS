@@ -27,7 +27,7 @@ header{
 }
 
 header > h1 {
-    font-size: 8vh;
+    font-size: 8vw;
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
@@ -54,7 +54,11 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 4vh;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -65,19 +69,27 @@ section.normal{
 section.img{
     color: white;
     background-color: lightgrey;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.177);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.img > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.403);
+    text-shadow: 1px 1px 0px black;
 }
 
-#flor{
-    background: black url(imagens/background001.jpg) center center no-repeat fixed;
-    background-size: cover;
+section#flor{
+    background-image: url(imagens/background001.jpg);
  }
 
+ section#livro{
+    background-image: url(imagens/background002.jpg);
+ }
 
 footer > p {
     padding: 15px;
