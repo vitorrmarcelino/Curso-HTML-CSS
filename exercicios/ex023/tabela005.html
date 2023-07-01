@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela 5</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cdestaque{
+            background-color: aqua;
+        }
+
+        .cgrupo{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col class="cdestaque">
+        <col class="cgrupo" span="2">
+        <col class="cdestaque">
+</colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="row">Nome</th>
+            <th scope="row">Sexo</th>
+            <th scope="row">Idade</th>
+            <th scope="row">Profissão</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Masculino</td>
+            <td>25</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Feminino</td>
+            <td>30</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Masculino</td>
+            <td>45</td>
+            <td>Médico</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Feminino</td>
+            <td>35</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Masculino</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Rafael</td>
+            <td>Masculino</td>
+            <td>31</td>
+            <td>Engenheiro Civil</td>
+        </tr>
+    </table>
+</body>
+</html>
