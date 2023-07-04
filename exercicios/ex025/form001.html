@@ -7,7 +7,16 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulario</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <!--
+        get = padrão(da p ver os dados na url)
+        (dados não sensiveis)
+        (aceita 3000 bytes, 3000 letras, nao aceita arquivo)
+
+        post = nao da p ver os dados na url, mas n esta protegido da p ver de outra maneira(pelo inspecionar)
+        (dados sensiveis) lembrando que ainda nao esta seguro
+        tem que usar https
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label>
              <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label>
