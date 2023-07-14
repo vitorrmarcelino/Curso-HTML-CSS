@@ -6,8 +6,9 @@
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
 </head>
-<body>
+<body onresize="Change()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -44,6 +45,17 @@
                     close1.style.display = 'block'
                 }
             }
+        function Change(){
+                if(window.innerWidth >= 768){
+                    burguer.style.display = 'none'
+                    close1.style.display = 'none'
+                    menu.style.display = 'block'
+                }else{
+                    burguer.style.display = 'block'
+                    close1.style.display = 'none'
+                    menu.style.display = 'none'           
+                }
+        }
     </script>
 </body>
 </html>
